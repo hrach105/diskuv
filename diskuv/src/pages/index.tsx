@@ -10,7 +10,6 @@ import LockIcon from '../images/icon1.png'
 import EyeIcon from '../images/icon2.png'
 import PhoneIcon from '../images/icon3.png'
 
-
 const IndexPage = () => {
   return (
     <Layout layoutClassName={'changer-layout'}>

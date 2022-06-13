@@ -3,13 +3,9 @@ import BannerDesc from '../../components/banner/BannerDesc'
 import './DiskuvProductsSection.scss'
 import IphoneImg from '../../images/iphone.png'
 
-
 const DiskuvProductsSection = () => {
-
     const [tabs,setTabs] = useState(1)
-
   return (
-    <>
         <div className="diskuv-section">
             <div className={`tabs ${tabs === 2 ? 'active' :''}`} >
                 <ul>
@@ -35,7 +31,6 @@ const DiskuvProductsSection = () => {
             }
             
         </div>
-    </>
   )
 }
 

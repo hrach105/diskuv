@@ -48,6 +48,7 @@ const IndexPage = () => {
      </div>
      <InfoBanner />
     </Layout>
+    
   )
 }
 

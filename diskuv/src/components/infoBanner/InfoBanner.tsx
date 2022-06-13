@@ -1,6 +1,7 @@
 import React from 'react'
 import BannerDesc from '../banner/BannerDesc'
 import Button from '../Button'
+import './infoBanner.scss'
 
 
 const InfoBanner = () => {

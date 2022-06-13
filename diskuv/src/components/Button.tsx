@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({btnText, btnClassName, btnType, onBtnClick, btnDisable}) => {
+const Button = ({btnText, btnClassName, btnType, onBtnClick, btnDisable}:any) => {
   return (
     <button 
         type={btnType || "button"} 

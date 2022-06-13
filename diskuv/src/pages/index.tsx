@@ -9,6 +9,9 @@ import BannerImg from '../images/banner-img.png'
 import LockIcon from '../images/icon1.png'
 import EyeIcon from '../images/icon2.png'
 import PhoneIcon from '../images/icon3.png'
+import Map from '../components/map/map'
+import AreYouDeveloper from "../fragments/home/areYouDeveloper/AreYouDeveloper"
+import InfoBanner from "../components/infoBanner/infoBanner"
 
 const IndexPage = () => {
   return (
@@ -34,6 +37,16 @@ const IndexPage = () => {
         </div>
      </div>
      <DiskuvProductsSection />
+     <div className="map">
+        <Map 
+          mapTitle="Feel connected to the world without any concern!" 
+          mapDesc="Lorem ipsum dolor sit amet, consetetur sadipscing"
+        />
+     </div>
+     <div className="are-you-dev">
+        <AreYouDeveloper />
+     </div>
+     <InfoBanner />
     </Layout>
   )
 }

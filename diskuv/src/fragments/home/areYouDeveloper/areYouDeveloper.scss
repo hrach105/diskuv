@@ -1,0 +1,36 @@
+.are-you-dev {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 130px;
+    .section-inner {
+        display: flex;
+        align-items: center;
+        .section-inner-desc {
+            h1 {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 21px;
+                color: #0D0D0D;
+            }
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                color: #0D0D0D;
+                margin-bottom: 45px;
+            }
+        }
+    }
+    .banner-links {
+        display: flex;
+        a {
+            text-decoration: none;
+            color: #5A32A8;
+            font-size: 20px;
+            line-height: 24px;
+            &:last-child {
+                margin-left: 80px;
+            }
+        }
+    }
+}

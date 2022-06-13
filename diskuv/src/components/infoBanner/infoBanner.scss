@@ -1,0 +1,31 @@
+.info-banner{
+    width: 100%;
+    min-height: 364px;
+    height: 100%;
+    background-color: #5A32A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .info-banner-content {
+        text-align: center;
+        h1 {
+            color: white;
+            line-height: 45px;
+            font-size: 30px;
+            margin-bottom: 45px;
+        }
+        p {
+            font-size: 14px;
+            color: white;
+            line-height: 25px;
+        }
+        button{
+            &.info-banner-btn {
+                padding: 15px 20px;
+                background-color: white;
+                color: #5A32A8;
+                font-size: 14px;
+            }
+        }
+    }
+}

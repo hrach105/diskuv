@@ -2,11 +2,13 @@ import React,{useState} from 'react'
 import BannerDesc from '../../components/banner/BannerDesc'
 import './DiskuvProductsSection.scss'
 import IphoneImg from '../../images/iphone.png'
+import Circle from '../../images/circle.png'
 
 const DiskuvProductsSection = () => {
     const [tabs,setTabs] = useState(1)
   return (
         <div className="diskuv-section">
+            <img className='circle' src={Circle} alt="" />
             <div className={`tabs ${tabs === 2 ? 'active' :''}`} >
                 <ul>
                     <li onClick={ ()=> setTabs(1)} className={ tabs===1 ?'active' : ''}>Diskuv Communicator</li>
@@ -28,10 +30,8 @@ const DiskuvProductsSection = () => {
                     bannerDescription="ksfdkdshgfkdolomy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd"
                 /> 
                 ) : null
-            }
-            
+            }    
         </div>
   )
 }
-
 export default DiskuvProductsSection

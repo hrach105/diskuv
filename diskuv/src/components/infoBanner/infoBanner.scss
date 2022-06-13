@@ -6,6 +6,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    img {
+        &:nth-child(1) {
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+        &:nth-child(2) {
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
     .info-banner-content {
         text-align: center;
         h1 {
@@ -25,6 +38,9 @@
                 background-color: white;
                 color: #5A32A8;
                 font-size: 14px;
+                border: none;
+                margin-top: 45px;
+                border-radius: 9px;
             }
         }
     }

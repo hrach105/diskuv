@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    width: 100%;
+    margin: 15px auto 0;
+    .left-side {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 93px;
+        }
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                margin: 0;
+                li {
+                    position: relative;
+                    color: #0D0D0D;
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                    cursor: pointer;
+                   &:not(:first-child) {
+                    margin-left: 55px;
+                   }
+                   a {
+                    text-decoration: none;
+                    color: #0D0D0D;
+                    font-size: 18px;
+                   }
+                   &.hoverable {
+                        &:hover {
+                            ul.sub-pages {
+                                display: block;
+                            }
+                           
+                        }
+                   }
+                   ul.sub-pages {
+                        padding: 20px;
+                        position: absolute;
+                        left: 0;
+                        top: 30px;
+                        background-color: white;
+                        box-shadow: 0 0 6px 6px #f1f1f1;
+                        display: none;
+                        li {
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            &:last-child {
+                                margin-bottom: 0;                            }
+                            
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+    }
+    .auth {
+        .sign-up {
+            background-color: white;
+            padding: 15px 20px;
+            color: #5A32A8;
+            font-size: 18px;
+            border-radius: 9px;
+            text-decoration: none;
+        }
+    }
+}
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    &.changer-layout .header {
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        top: 15px;
+    }
+}
+main {
+    flex-grow: 1;
+}

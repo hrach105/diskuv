@@ -1,0 +1,68 @@
+.diskuv-section {
+    margin-bottom: 103px;
+    display: flex;
+    align-items: center;
+    .tabs {
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        &::before {
+            content: "";
+            width: 74px;
+            height: 3px;
+            background-color: #5A32A8;
+            transition: 0.5s;
+            margin-right: 32px;
+            margin-top: 15px;
+        }
+        &.active {
+            &::before {
+               margin-top: 84px;
+            }
+        }
+        ul {
+            list-style-type: none; 
+            transition: 0.5s;
+            li {
+                
+                color: #959595;
+                font-size: 25px;
+                margin-bottom: 40px;
+                
+                &.active {
+                    font-size: 30px;
+                    color: #5A32A8;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .section-img {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 100px 0 38px;
+        img {
+            width: 100%;
+            min-height: 500px;
+            object-fit: cover;
+        }
+    }
+    .banner-desc {
+        max-width: 487px;
+        width: 100%;
+        h1 {
+            font-size: 30px;
+            color: #0D0D0D;
+            margin-bottom: 36px;
+            line-height: 45px;
+            max-width: 323px;
+            width: 100%;
+        }
+        p {
+            font-size: 14px;
+            color: #0D0D0D;
+            line-height: 25px;
+        }
+    }
+}

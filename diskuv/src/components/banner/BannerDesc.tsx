@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../Button'
 
-const BannerDesc = ({bannerTitle,bannerDescription,children}) => {
+const BannerDesc = ({bannerTitle ,bannerDescription,children}:any) :any => {
   return (
     <div className='banner-desc'>
         <h1>{bannerTitle}</h1>

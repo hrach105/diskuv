@@ -11,26 +11,35 @@
         &:nth-child(1) {
             left: 40px;
             top: 0;
-            position: absolute;
+            position: absolute; 
+            z-index: 0;      
         }
         &:nth-child(2) {
             right: 0;
-            bottom: 24px;
-            position: absolute;
+            bottom: 0;
+            position: absolute;  
+            z-index: 0;       
         }
     }
     .info-banner-content {
         text-align: center;
+        z-index: 1;
+        @media(max-width:920px) {
+            max-width: 800px;
+            margin: auto;
+        }
         h1 {
             color: white;
             line-height: 45px;
             font-size: 30px;
             margin-bottom: 45px;
+            font-family: Lato;
         }
         p {
             font-size: 14px;
             color: white;
             line-height: 25px;
+            font-family: Helvetica;
         }
         button{
             &.info-banner-btn {
@@ -41,6 +50,8 @@
                 border: none;
                 margin-top: 45px;
                 border-radius: 9px;
+                font-family: Helvetica;
+                cursor: pointer;
             }
         }
     }

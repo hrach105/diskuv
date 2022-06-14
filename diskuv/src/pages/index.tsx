@@ -11,8 +11,9 @@ import EyeIcon from '../images/icon2.png'
 import PhoneIcon from '../images/icon3.png'
 import Map from '../components/map/map'
 import AreYouDeveloper from "../fragments/home/areYouDeveloper/AreYouDeveloper"
-import InfoBanner from "../components/infoBanner/infoBanner"
 import Post from "../components/post/Post"
+import InfoBanner from "../components/infoBanner/InfoBanner"
+
 
 const IndexPage = () => {
   return (
@@ -25,6 +26,7 @@ const IndexPage = () => {
                 bannerDescription={'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd'}
               >
                <Button  btnText="Join Diskuv Now" btnClassName={'banner-desc-btn'} />
+              
               </BannerDesc>
               <img src={BannerImg} alt="" />
             </div>
@@ -47,7 +49,7 @@ const IndexPage = () => {
      <div className="are-you-dev">
         <AreYouDeveloper />
      </div>
-     <InfoBanner />
+      <InfoBanner/>
      <Post />
     </Layout>
   )

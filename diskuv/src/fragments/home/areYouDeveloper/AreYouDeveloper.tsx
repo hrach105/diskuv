@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import BannerDesc from '../../../components/banner/BannerDesc';
 import NotebookImg  from '../../../images/notebook.png'
+import MobileImg  from '../../../images/full-notebook.png'
 import './areYouDeveloper.scss'
 
 const AreYouDeveloper = () => {
@@ -16,6 +17,7 @@ const AreYouDeveloper = () => {
        </div>
        <div className="banner-image">
         <img src={NotebookImg} alt="" />
+        <img className='mobile-img' hidden src={MobileImg} alt="" />
        </div>
     </div>
   )

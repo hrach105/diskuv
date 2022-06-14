@@ -9,24 +9,42 @@
     position: relative;
     display: flex;
     align-items: center;
+   
     .banner-inner {
         display: flex;
         align-items: center;
         margin-top: 60px;
+        @media(max-width:920px) {
+            flex-direction: column;
+         }
         .banner-desc {
             max-width: 487px;
             width: 100%;
             margin-right: 96px;
+            padding: 0 10px;
+            @media(max-width:920px) {
+                text-align: center;
+                margin-right: 0;
+               
+            }
             h1 {
                 font-size: 40px;
                 color: #0D0D0D;
                 line-height: 48px;
+                font-family: lato;
+                @media(max-width:920px) {
+                   font-size: 24px; 
+                }
             }
             p {
                 font-size: 14px;
                 color: #0D0D0D;
                 line-height: 25px;
                 margin: 36px 0;
+                font-family: Helvetica;
+                @media(max-width:920px) {
+                    margin: 10px 0 15px; 
+                 }
             }
             .banner-desc-btn {
                 background-color: #5A32A8;
@@ -35,11 +53,16 @@
                 padding: 15px 20px;
                 color: white;
                 outline: none;
+                font-family: Helvetica;
             }
         }
         img {
             max-width: 390px;
             width: 100%;
+            @media(max-width:920px) {
+                max-width: 300px;
+                margin:50px auto 0;
+             }
         }
 
     }

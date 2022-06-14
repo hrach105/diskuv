@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react'
 import  PostImage  from "../../images/postimage.jpg";
 import './post.scss'
@@ -29,6 +30,8 @@ const Post = () => {
                 PostContent="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod"
             />
       </div>
+        <Link className='view-all-post' to='#'>View All Posts</Link>
+
     </div>
   )
 }

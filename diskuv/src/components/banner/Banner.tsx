@@ -1,6 +1,6 @@
 import React from 'react'
 import './banner.scss'
-const Banner = ({ bannerContent }) => {
+const Banner = ({ bannerContent }:any):any => {
   return (
     <div className='banner'>
         {bannerContent}

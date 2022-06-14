@@ -12,6 +12,7 @@ import PhoneIcon from '../images/icon3.png'
 import Map from '../components/map/map'
 import AreYouDeveloper from "../fragments/home/areYouDeveloper/AreYouDeveloper"
 import InfoBanner from "../components/infoBanner/infoBanner"
+import Post from "../components/post/Post"
 
 const IndexPage = () => {
   return (
@@ -47,8 +48,8 @@ const IndexPage = () => {
         <AreYouDeveloper />
      </div>
      <InfoBanner />
+     <Post />
     </Layout>
-    
   )
 }
 

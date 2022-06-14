@@ -9,13 +9,13 @@
     position: relative;
     img {
         &:nth-child(1) {
-            left: 0;
+            left: 40px;
             top: 0;
             position: absolute;
         }
         &:nth-child(2) {
             right: 0;
-            bottom: 0;
+            bottom: 24px;
             position: absolute;
         }
     }

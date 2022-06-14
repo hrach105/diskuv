@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { Link,graphql } from 'gatsby'
 import React from 'react'
 import Navbar from '../Navbar'
 import Logo from '../../images/logo.png';

@@ -9,7 +9,9 @@
     position: relative;
     display: flex;
     align-items: center;
-   
+    @media(max-width:920px) {
+        background-image: none;
+     }
     .banner-inner {
         display: flex;
         align-items: center;
@@ -25,7 +27,7 @@
             @media(max-width:920px) {
                 text-align: center;
                 margin-right: 0;
-               
+                margin-top: 100px;
             }
             h1 {
                 font-size: 40px;

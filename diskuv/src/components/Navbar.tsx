@@ -7,7 +7,8 @@ const Navbar = () => {
     <ul>
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/pricing'>Pricing</Link></li>
-      <li className='hoverable'>products
+      <li className='hoverable'>
+        <Link to='#'>Products</Link>
         <ul className='sub-pages'>
           <li> <Link to='/products/diskuvComunicator'>diskuvComunicator</Link></li>
           <li><Link to='/products/diskuvSanctuary'>diskuv sanctuary</Link></li>

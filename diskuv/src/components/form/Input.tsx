@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = ({type,placeholder,value,handlerChange,id}:any):any => {
+const Input = ({type,placeholder,value,handleChange,id}:any):any => {
   return (
     <div className='input-item'>
         <input 
@@ -8,7 +8,7 @@ const Input = ({type,placeholder,value,handlerChange,id}:any):any => {
             type={type} 
             placeholder={placeholder}
             value={value}
-            onChange={handlerChange}
+            onChange={handleChange}  
         />
         
     </div>

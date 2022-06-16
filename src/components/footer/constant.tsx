@@ -43,6 +43,6 @@ export const footerLinks = [
     },
     {
         linkTitle: 'Terms & Conditions',
-        path: '/termsConditions'
+        path: '/terms'
     }
 ]
